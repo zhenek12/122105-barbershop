@@ -19,7 +19,7 @@
               <a href="#">Прайс-лист</a>
             </li>
             <li>
-              <a href="#">Магазин</a>
+              <a class="active-page" href="#">Магазин</a>
             </li>
             <li>
               <a href="#">Контакты</a>
@@ -35,7 +35,7 @@
   <main class="container">  
     <div class="index-content">
         
-        <h1 class="index-content-title">Средства для ухода</h1> 
+        <h1>Средства для ухода</h1> 
   
         <ul class="breadcrumbs">
           <li><a href="/">Главная</a></li>
@@ -43,89 +43,106 @@
           <li>Средства для ухода</li>
         </ul>
         
-        <div class="index-content-left">
+        <div class="product-selection">
           <form class="characteristics-form" action="#" method="get">
             <h2 class="characteristics-title">ПРОИЗВОДИТЕЛИ</h2>
             <label>  
-              BAXTER OF CALIFORNIA <input type="checkbox" name="check01" checked>
+              BAXTER OF CALIFORNIA <input type="checkbox" name="producers[]" value="1" checked>
             </label>
             <label>  
-              MR NATTY <input type="checkbox" name="check02">
+              MR NATTY <input type="checkbox" name="producers[]" value="2">
             </label>
             <label>  
-              SUAVECITO <input type="checkbox" name="check03" checked>
+              SUAVECITO <input type="checkbox" name="producers[]" value="3" checked>
             </label>
             <label>  
-              MALIN+GOETZ <input type="checkbox" name="check04">
+              MALIN+GOETZ <input type="checkbox" name="producers[]" value="4">
             </label>
             <label>  
-              MURRAY'S <input type="checkbox" name="check05">
+              MURRAY'S <input type="checkbox" name="producers[]" value="5">
             </label>
             <label>  
-              AMERICAN CREW <input type="checkbox" name="check06" checked>
+              AMERICAN CREW <input type="checkbox" name="producers[]" value="6" checked>
             </label>            
 
             <h2 class="characteristics-title">ГРУППЫ ТОВАРОВ</h2>
             <label>  
-              БРИТВЕННЫЕ ПРИНАДЛЕЖНОСТИ <input type="radio" name="radio01">
+              БРИТВЕННЫЕ ПРИНАДЛЕЖНОСТИ <input type="radio" name="product-group" value="razor">
             </label>
             <label>  
-              СРЕДСТВА ДЛЯ УХОДА <input type="radio" name="radio02" checked>
+              СРЕДСТВА ДЛЯ УХОДА <input type="radio" name="product-group" value="care" checked>
             </label>
             <label>  
-              АКСЕССУАРЫ <input type="radio" name="radio03">
+              АКСЕССУАРЫ <input type="radio" name="product-group" value="accessories">
             </label>                  
             <button class="characteristics-form-btn" type="submit">ПОКАЗАТЬ</button>       
           </form>
         </div>    
          
-        <div class="index-content-right">
+        <div class="product-cards">
           <div class="goods">
-            <article class="goods-grid">
-            <img src="http://placehold.it/150x100">
-            <H3> Название товара </H3>
-            <p>2900 РУБ.</p>
-            <a href="#">КУПИТЬ</a>  
-          </article>
-            <article class="goods-grid">
-            <img src="http://placehold.it/150x100">
-            <H3> Название товара </H3>
-            <p>2900 РУБ.</p>
-            <a href="#">КУПИТЬ</a>  
-          </article>
-            <article class="goods-grid">
-            <img src="http://placehold.it/150x100">
-            <H3> Название товара </H3>
-            <p>2900 РУБ.</p>
-            <a href="#">КУПИТЬ</a>  
-          </article>
-            <article class="goods-grid">
-            <img src="http://placehold.it/150x100">
-            <H3> Название товара </H3>
-            <p>2900 РУБ.</p>
-            <a href="#">КУПИТЬ</a>  
-          </article>
-            <article class="goods-grid">
-            <img src="http://placehold.it/150x100">
-            <H3> Название товара </H3>
-            <p>2900 РУБ.</p>
-            <a href="#">КУПИТЬ</a>  
-          </article>
-            <article class="goods-grid">
-            <img src="http://placehold.it/150x100">
-            <H3> Название товара </H3>
-            <p>2900 РУБ.</p>
-            <a href="#">КУПИТЬ</a>  
-          </article>    
-          </div> 
-        </div>   
-        
-        <div class="page-number">
-          <a class="page-number-inactive" href="#">1</a>
-          <a class="page-number-active" href="#">2</a>   
-          <a class="page-number-inactive" href="#">3</a>    
-          <a class="page-number-inactive" href="#">4</a>
-        </div>
+            <article class="item">
+			  <a href="#"><img src="http://placehold.it/185x135" alt="Набор для путешествий BAXTER OF CALIFORNIA" width="185" height="135"></a>
+              <H3> Набор для путешествий<br>
+				   "BAXTER OF CALIFORNIA"</H3>
+              <div class="Add-to-cart">
+				<h3>2 900 РУБ.</h3>
+                <a href="#">КУПИТЬ</a>  
+			  </div>
+            </article>
+			<article class="item">
+			  <a href="#"><img src="http://placehold.it/185x135" alt="Увлажняющий кондиционер BAXTER OF CALIFORNIA" width="185" height="135"></a>
+              <H3> Увлажняющий кондиционер<br>
+				   "BAXTER OF CALIFORNIA"</H3>
+              <div class="Add-to-cart">
+				<h3>750 РУБ.</h3>
+                <a href="#">КУПИТЬ</a>  
+			  </div>
+            </article>  
+			<article class="item">
+			  <a href="#"><img src="http://placehold.it/185x135" alt="Гель для волос SUAVECITO" width="185" height="135"></a>
+              <H3> Гель для волос<br>
+				   "SUAVECITO"</H3>
+              <div class="Add-to-cart">
+				<h3>290 РУБ.</h3>
+                <a href="#">КУПИТЬ</a>  
+			  </div>
+            </article>  
+			<article class="item">
+			  <a href="#"><img src="http://placehold.it/185x135" alt="Глина для укладки волос AMERICAN CREW" width="185" height="135"></a>
+              <H3> Глина для укладки волос<br>
+				   "AMERICAN CREW"</H3>
+              <div class="Add-to-cart">
+				<h3>500 РУБ.</h3>
+                <a href="#">КУПИТЬ</a>  
+			  </div>
+            </article>
+			<article class="item">
+			  <a href="#"><img src="http://placehold.it/185x135" alt="Гель для волос AMERICAN CREW" width="185" height="135"></a>
+              <H3> Гель для волос<br>
+				   "AMERICAN CREW"</H3>
+              <div class="Add-to-cart">
+				<h3>300 РУБ.</h3>
+                <a href="#">КУПИТЬ</a>  
+			  </div>
+            </article>  
+			<article class="item">
+			  <a href="#"><img src="http://placehold.it/185x135" alt="Набор для бритья BAXTER OF CALIFORNIA" width="185" height="135"></a>
+              <H3> Набор для бритья<br>
+				   "BAXTER OF CALIFORNIA"</H3>
+              <div class="Add-to-cart">
+				<h3>3 900 РУБ.</h3>
+                <a href="#">КУПИТЬ</a>  
+			  </div>
+            </article>  
+          </div>   
+          <div class="paginator">
+            <a  href="#">1</a>
+            <a class="paginator-active" href="#">2</a>   
+            <a  href="#">3</a>    
+            <a  href="#">4</a>
+          </div>
+		</div>
     </div> 
   </main>
   <footer class="main-footer">
